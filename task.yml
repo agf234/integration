@@ -20,4 +20,6 @@ run:
   - | 
     pwd
     cd integration-suite
+    pwd
+    ls -ltra
     make compile
