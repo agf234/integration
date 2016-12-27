@@ -1,0 +1,13 @@
+
+all: compile test run
+
+compile:
+	find ..
+	gcc -O2 -Wall ../c-code/hola.c -o hola
+	go build ../altbosh/altbosh.go
+	
+test:
+	./hola
+
+run:
+	./hola && ./altbosh -h
