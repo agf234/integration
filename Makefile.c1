@@ -1,10 +1,14 @@
 all: compile test run
 
 compile:
+	cd worker
 	gcc -O2 -Wall hola.c -o hola
-
+	cd ..
+	cd controller
+	go build altbosh.go
+	
 test:
 	./hola
 
 run:
-	./hola
+	./hola && ./altbosh -h
