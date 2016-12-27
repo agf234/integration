@@ -1,6 +1,7 @@
 all: compile test run
 
 compile:
+	find ..
 	cd ..
 	cd worker
 	gcc -O2 -Wall hola.c -o hola
