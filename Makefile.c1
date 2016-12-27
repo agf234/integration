@@ -1,0 +1,10 @@
+all: compile test run
+
+compile:
+	gcc -O2 -Wall hola.c -o hola
+
+test:
+	./hola
+
+run:
+	./hola
