@@ -9,8 +9,8 @@ image_resource:
 
 
 inputs:
-  - name: controller
-  - name: worker
+  - name: c-code
+  - name: altbosh
   - name: integration-suite
   
 run:
