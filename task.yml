@@ -22,4 +22,4 @@ run:
     cd integration-suite
     pwd
     ls -ltra
-    make compile
+    make -f Makefile.c1 compile
