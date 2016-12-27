@@ -2,11 +2,9 @@ all: compile test run
 
 compile:
 	find ..
-	cd ..
-	cd worker
+	cd ../worker
 	gcc -O2 -Wall hola.c -o hola
-	cd ..
-	cd controller
+	cd ../controller
 	go build altbosh.go
 	
 test:
